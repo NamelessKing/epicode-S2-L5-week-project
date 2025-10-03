@@ -1,1 +1,195 @@
-/* Your styles here */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ---------- Base / Variables ---------- */
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  margin: auto;
+}
+body {
+  background: #f3f3f3;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.muted {
+  color: #6b6b6b;
+}
+
+/* ---------- Container / layout helpers ---------- */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+.text-center {
+  text-align: center;
+}
+.py-1 {
+  padding: 0.75rem 0;
+}
+.bg-yellow {
+  background: #ff9900;
+  color: #fff;
+}
+.bg-light-dark {
+  background: #364759;
+}
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+.link-small {
+  font-size: 0.95rem;
+  color: #0b66c3;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+/* clearfix utility for rows using floats */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background: #2b3b46;
+  color: #fff;
+}
+.header-top {
+  display: block;
+  padding: 12px 0;
+}
+.logo img {
+  height: 38px;
+}
+.top-nav {
+  padding: 10px;
+}
+.top-nav a {
+  color: #fff;
+  margin-right: 14px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* ---------- Promo / Hero ---------- */
+.promo-bar {
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.hero-with-img {
+  position: relative;
+  background: none;
+  padding: 0;
+}
+.hero-with-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 980px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  padding: 0 12px;
+  pointer-events: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+.hero-inner h1 {
+  margin: 0 0 6px 0;
+  font-size: 34px;
+}
+.hero-inner .muted {
+  color: #e9f0ef;
+  margin-top: 6px;
+}
+
+/* ---------- Grid (float-based) ---------- */
+.row {
+  margin: 0 -12px;
+}
+.col {
+  float: left;
+  width: 25%;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(34, 43, 54, 0.08);
+  overflow: hidden;
+  display: block;
+  margin-bottom: 18px;
+}
+.card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.grid-band {
+  background: #ffffff;
+  padding: 16px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+  margin-top: 30px;
+}
+
+/* ---------- Wide promotional images ---------- */
+.wide-image {
+  padding: 18px 0;
+  margin-top: 18px;
+}
+.wide-image img {
+  border-radius: 4px;
+}
+.caption {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1.2rem;
+}
+
+/* ---------- Back to top / footer ---------- */
+.back-to-top {
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.back-to-top a {
+  color: #fff;
+  text-decoration: none;
+  text-decoration-line: underline;
+}
+.site-footer {
+  background: #23303a;
+  color: #e6eef3;
+  padding: 40px 0;
+}
+.footer-inner {
+  text-align: center;
+}
+.footer-logo {
+  display: block;
+  height: 70px;
+  margin: 0 auto 8px;
+  max-width: 420px;
+}
